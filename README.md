@@ -71,4 +71,4 @@ Code and game data: MIT ([LICENSE](LICENSE)). Meshes, textures, logo and picture
 
 ## Links
 
-[Forum thread](https://forums.ahwoo.com/threads/fairings-by-purrline-rocketworks.ID/) | [Issues](https://github.com/Maximilian-Nesslauer/KSA-PurrlineFairings/issues)
+[Forum thread](https://forums.ahwoo.com/forums/kitten-space-agency/mod-releases/fairings-by-purrline-rocketworks.1679/) | [Issues](https://github.com/Maximilian-Nesslauer/KSA-PurrlineFairings/issues)
