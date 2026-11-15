@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Fairings by Purrline Rocketworks: game data of the set PurrlineFairing3A. Each Modify="Patch" row changes the row of the
+     same Id in PurrlineFairing3AAssets.xml, so this file loads after it. A variant member (the B part, black carbon) takes all
+     game data from its head (the A part, white paint) and has only its own subparts.
+     build_mod.py writes this file from fairings_data.py; do not edit it by hand.
+-->
+<Assets>
+
+    <Part Id="PurrlineFairing3A_Prefab_Base" Modify="Patch" DisplayName="Fairing Base 3 m">
+        <EditorTags Modify="Extend">
+            <EditorTag Ref="Coupling" />
+            <EditorTag Ref="Interstage" />
+        </EditorTags>
+        <Diameters Modify="Extend">
+            <Diameter M="3" />
+        </Diameters>
+        <!-- The payload sits on the inner connector, which is aligned with the outer top connector. -->
+        <Connectors Modify="Extend">
+            <Connector Key="_connector3TopInner" Modify="Patch">
+                <Flags>Internal</Flags>
+            </Connector>
+        </Connectors>
+        <AlignedGroups Modify="Extend">
+            <Aligned>
+                <Connectors>
+                    <Connector KeyRef="_connector2Top" />
+                    <Connector KeyRef="_connector3TopInner" />
+                </Connectors>
+            </Aligned>
+        </AlignedGroups>
+        <!-- The ring, and the payload adapter with the separation system, about 175 kg in all. -->
+        <InertMasses Modify="Extend">
+            <HollowOpenCylinderMass>
+                <Material Ref="Aluminum.2014" Phase="Solid" />
+                <Length M="0.5" />
+                <OuterRadius M="1.5" />
+                <WallThickness Mm="8" />
+            </HollowOpenCylinderMass>
+            <SolidCylinderMass>
+                <Mass Kg="69" />
+                <Length M="0.4" />
+                <Radius M="1" />
+            </SolidCylinderMass>
+        </InertMasses>
+        <Components Modify="Extend">
+            <Collider Key="Collider1">
+                <Colliders>
+                    <Cylinder Key="CylinderCollider1">
+                        <LocationAsmb X="-0.05" />
+                        <Collider2Asmb X="0" Y="0" Z="-1.5708" />
+                        <LengthY M="0.4" />
+                        <Radius M="1.5" />
+                    </Cylinder>
+                </Colliders>
+            </Collider>
+        </Components>
+    </Part>
+
+    <Part Id="PurrlineFairing3A_Prefab_HalfShortA" Modify="Patch" DisplayName="Fairing Half 3 m Short">
+        <EditorTags Modify="Extend">
+            <EditorTag Ref="Interstage" />
+            <EditorTag Ref="Structural" />
+        </EditorTags>
+        <Diameters Modify="Extend">
+            <Diameter M="3" />
+        </Diameters>
+        <!--
+             The half is a decoupler on its own connector, which keeps the DecouplerJoint capability, as on
+             the stock fairings. Each side of the split gets the impulse divided by its mass along the
+             connector (Vehicle.Split), so the half moves straight out at about 9.5 m/s at scale 1.
+        -->
+        <Connectors Modify="Extend">
+            <Connector Key="_connector1Base" Modify="Patch">
+                <Capabilities>DecouplerJoint</Capabilities>
+            </Connector>
+        </Connectors>
+        <Components Modify="Extend">
+            <Decoupler Force="2070">
+                <Connector KeyRef="_connector1Base" />
+            </Decoupler>
+        </Components>
+        <!-- The shell and the acoustic blanket as one thin shell of 218 kg. -->
+        <InertMasses Modify="Extend">
+            <CustomMass>
+                <LocationAsmb X="3.31" Z="-0.86" />
+                <Mass Kg="218" />
+                <MassSpecificInertia Ixx="1.15" Iyy="4.17" Izz="4.9" />
+            </CustomMass>
+        </InertMasses>
+    </Part>
+
+    <Part Id="PurrlineFairing3A_Prefab_HalfMediumA" Modify="Patch" DisplayName="Fairing Half 3 m Medium">
+        <EditorTags Modify="Extend">
+            <EditorTag Ref="Interstage" />
+            <EditorTag Ref="Structural" />
+        </EditorTags>
+        <Diameters Modify="Extend">
+            <Diameter M="3" />
+        </Diameters>
+        <!--
+             The half is a decoupler on its own connector, which keeps the DecouplerJoint capability, as on
+             the stock fairings. Each side of the split gets the impulse divided by its mass along the
+             connector (Vehicle.Split), so the half moves straight out at about 9.5 m/s at scale 1.
+        -->
+        <Connectors Modify="Extend">
+            <Connector Key="_connector1Base" Modify="Patch">
+                <Capabilities>DecouplerJoint</Capabilities>
+            </Connector>
+        </Connectors>
+        <Components Modify="Extend">
+            <Decoupler Force="2570">
+                <Connector KeyRef="_connector1Base" />
+            </Decoupler>
+        </Components>
+        <!-- The shell and the acoustic blanket as one thin shell of 270 kg. -->
+        <InertMasses Modify="Extend">
+            <CustomMass>
+                <LocationAsmb X="4.06" Z="-0.88" />
+                <Mass Kg="270" />
+                <MassSpecificInertia Ixx="1.19" Iyy="6.05" Izz="6.81" />
+            </CustomMass>
+        </InertMasses>
+    </Part>
+
+    <Part Id="PurrlineFairing3A_Prefab_HalfLongA" Modify="Patch" DisplayName="Fairing Half 3 m Long">
+        <EditorTags Modify="Extend">
+            <EditorTag Ref="Interstage" />
+            <EditorTag Ref="Structural" />
+        </EditorTags>
+        <Diameters Modify="Extend">
+            <Diameter M="3" />
+        </Diameters>
+        <!--
+             The half is a decoupler on its own connector, which keeps the DecouplerJoint capability, as on
+             the stock fairings. Each side of the split gets the impulse divided by its mass along the
+             connector (Vehicle.Split), so the half moves straight out at about 9.5 m/s at scale 1.
+        -->
+        <Connectors Modify="Extend">
+            <Connector Key="_connector1Base" Modify="Patch">
+                <Capabilities>DecouplerJoint</Capabilities>
+            </Connector>
+        </Connectors>
+        <Components Modify="Extend">
+            <Decoupler Force="3560">
+                <Connector KeyRef="_connector1Base" />
+            </Decoupler>
+        </Components>
+        <!-- The shell and the acoustic blanket as one thin shell of 375 kg. -->
+        <InertMasses Modify="Extend">
+            <CustomMass>
+                <LocationAsmb X="5.59" Z="-0.9" />
+                <Mass Kg="375" />
+                <MassSpecificInertia Ixx="1.23" Iyy="10.99" Izz="11.8" />
+            </CustomMass>
+        </InertMasses>
+    </Part>
+</Assets>

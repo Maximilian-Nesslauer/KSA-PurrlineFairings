@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Fairings by Purrline Rocketworks: game data of the set PurrlineFairingHammerA. Each Modify="Patch" row changes the row of the
+     same Id in PurrlineFairingHammerAAssets.xml, so this file loads after it. A variant member (the B part, black carbon) takes all
+     game data from its head (the A part, white paint) and has only its own subparts.
+     build_mod.py writes this file from fairings_data.py; do not edit it by hand.
+-->
+<Assets>
+
+    <Part Id="PurrlineFairingHammerA_Prefab_Base2To3A" Modify="Patch" DisplayName="Fairing Base 2 m to 3 m">
+        <EditorTags Modify="Extend">
+            <EditorTag Ref="Coupling" />
+            <EditorTag Ref="Interstage" />
+        </EditorTags>
+        <!-- The larger diameter first, so that the scale tool steps the fairing ring by 0.25 m (VehicleEditor.QuantizeScale). -->
+        <Diameters Modify="Extend">
+            <Diameter M="3" />
+            <Diameter M="2" />
+        </Diameters>
+        <!-- The payload sits on the inner connector, which is aligned with the outer top connector. -->
+        <Connectors Modify="Extend">
+            <Connector Key="_connector3TopInner" Modify="Patch">
+                <Flags>Internal</Flags>
+            </Connector>
+        </Connectors>
+        <AlignedGroups Modify="Extend">
+            <Aligned>
+                <Connectors>
+                    <Connector KeyRef="_connector2Top" />
+                    <Connector KeyRef="_connector3TopInner" />
+                </Connectors>
+            </Aligned>
+        </AlignedGroups>
+        <!-- The 3 m fairing ring, the payload adapter, the cone from 2 m to 3 m and the 2 m collar, about 348 kg in all. -->
+        <InertMasses Modify="Extend">
+            <HollowOpenCylinderMass>
+                <LocationAsmb X="0.6" />
+                <Material Ref="Aluminum.2014" Phase="Solid" />
+                <Length M="0.5" />
+                <OuterRadius M="1.5" />
+                <WallThickness Mm="8" />
+            </HollowOpenCylinderMass>
+            <SolidCylinderMass>
+                <LocationAsmb X="0.6" />
+                <Mass Kg="69" />
+                <Length M="0.4" />
+                <Radius M="1" />
+            </SolidCylinderMass>
+            <HollowOpenTruncatedConeMass>
+                <LocationAsmb X="0.35" />
+                <Paf2Asmb Z="3.1416" />
+                <Material Ref="Aluminum.2014" Phase="Solid" />
+                <Height M="1.1" />
+                <RadiusBase M="1.5" />
+                <RadiusTop M="1" />
+                <WallThickness Mm="6" />
+            </HollowOpenTruncatedConeMass>
+            <HollowOpenCylinderMass>
+                <LocationAsmb X="-0.8" />
+                <Material Ref="Aluminum.2014" Phase="Solid" />
+                <Length M="0.1" />
+                <OuterRadius M="1" />
+                <WallThickness Mm="8" />
+            </HollowOpenCylinderMass>
+        </InertMasses>
+        <Components Modify="Extend">
+            <!-- The hull of the collar and the cone comes from the prefab; this adds the ring. -->
+            <Collider Key="Collider1" Modify="Patch">
+                <Colliders Modify="Extend">
+                    <Cylinder Key="CylinderCollider1">
+                        <LocationAsmb X="0.55" />
+                        <Collider2Asmb X="0" Y="0" Z="-1.5708" />
+                        <LengthY M="0.4" />
+                        <Radius M="1.5" />
+                    </Cylinder>
+                </Colliders>
+            </Collider>
+        </Components>
+    </Part>
+
+    <Part Id="PurrlineFairingHammerA_Prefab_Base3To4A" Modify="Patch" DisplayName="Fairing Base 3 m to 4 m">
+        <EditorTags Modify="Extend">
+            <EditorTag Ref="Coupling" />
+            <EditorTag Ref="Interstage" />
+        </EditorTags>
+        <!-- The larger diameter first, so that the scale tool steps the fairing ring by 0.25 m (VehicleEditor.QuantizeScale). -->
+        <Diameters Modify="Extend">
+            <Diameter M="4" />
+            <Diameter M="3" />
+        </Diameters>
+        <!-- The payload sits on the inner connector, which is aligned with the outer top connector. -->
+        <Connectors Modify="Extend">
+            <Connector Key="_connector3TopInner" Modify="Patch">
+                <Flags>Internal</Flags>
+            </Connector>
+        </Connectors>
+        <AlignedGroups Modify="Extend">
+            <Aligned>
+                <Connectors>
+                    <Connector KeyRef="_connector2Top" />
+                    <Connector KeyRef="_connector3TopInner" />
+                </Connectors>
+            </Aligned>
+        </AlignedGroups>
+        <!-- The 4 m fairing ring, the payload adapter, the cone from 3 m to 4 m and the 3 m collar, about 600 kg in all. -->
+        <InertMasses Modify="Extend">
+            <HollowOpenCylinderMass>
+                <LocationAsmb X="0.6" />
+                <Material Ref="Aluminum.2014" Phase="Solid" />
+                <Length M="0.6" />
+                <OuterRadius M="2" />
+                <WallThickness Mm="8" />
+            </HollowOpenCylinderMass>
+            <SolidCylinderMass>
+                <LocationAsmb X="0.6" />
+                <Mass Kg="186" />
+                <Length M="0.5" />
+                <Radius M="1" />
+            </SolidCylinderMass>
+            <HollowOpenTruncatedConeMass>
+                <LocationAsmb X="0.3" />
+                <Paf2Asmb Z="3.1416" />
+                <Material Ref="Aluminum.2014" Phase="Solid" />
+                <Height M="1.1" />
+                <RadiusBase M="2" />
+                <RadiusTop M="1.5" />
+                <WallThickness Mm="6" />
+            </HollowOpenTruncatedConeMass>
+            <HollowOpenCylinderMass>
+                <LocationAsmb X="-0.85" />
+                <Material Ref="Aluminum.2014" Phase="Solid" />
+                <Length M="0.1" />
+                <OuterRadius M="1.5" />
+                <WallThickness Mm="8" />
+            </HollowOpenCylinderMass>
+        </InertMasses>
+        <Components Modify="Extend">
+            <!-- The hull of the collar and the cone comes from the prefab; this adds the ring. -->
+            <Collider Key="Collider1" Modify="Patch">
+                <Colliders Modify="Extend">
+                    <Cylinder Key="CylinderCollider1">
+                        <LocationAsmb X="0.55" />
+                        <Collider2Asmb X="0" Y="0" Z="-1.5708" />
+                        <LengthY M="0.5" />
+                        <Radius M="2" />
+                    </Cylinder>
+                </Colliders>
+            </Collider>
+        </Components>
+    </Part>
+</Assets>
