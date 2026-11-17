@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1
+
+- Block new surface attachments on jettisonable fairing halves. Preserve part IDs, connector order and fairing joints.
+- Keep the shared 2 m fairing files identical to Prisma 1.2.0.
+
 ## 1.0.0
 
 First release, validated against KSA build version 2026.11.10.5801: fairing halves of 2 m and 3 m, each short, medium and long, in white paint or black carbon; fairing bases for 2 m and 3 m stacks; hammerhead bases from a 2 m stage to a 3 m fairing and from a 3 m stage to a 4 m fairing (a 3 m half at scale 1.33). Every half has a quilted acoustic blanket inside.

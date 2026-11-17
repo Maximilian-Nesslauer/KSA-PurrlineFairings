@@ -11,6 +11,7 @@
         <EditorTags Modify="Extend">
             <EditorTag Ref="Interstage" />
             <EditorTag Ref="Structural" />
+            <EditorTag Ref="Radial" />
         </EditorTags>
         <Diameters Modify="Extend">
             <Diameter M="2" />
@@ -44,6 +45,7 @@
         <EditorTags Modify="Extend">
             <EditorTag Ref="Interstage" />
             <EditorTag Ref="Structural" />
+            <EditorTag Ref="Radial" />
         </EditorTags>
         <Diameters Modify="Extend">
             <Diameter M="2" />

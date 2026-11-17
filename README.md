@@ -2,7 +2,9 @@
 
 Payload fairings for [Kitten Space Agency](https://ahwoo.com/app/100000/kitten-space-agency), from the fictional rocket maker Purrline Rocketworks: fairing halves of 2 m and 3 m in three lengths, white or black carbon, with bases for 2 m and 3 m stacks and hammerhead bases that put a wider fairing on a narrower stage.
 
-Validated against KSA build version 2026.11.10.5801.
+## Compatibility
+
+Validated against KSA build version **2026.11.16.5901**.
 
 ![The fairing family in orbit: 2 m and 3 m fairings, hammerheads, white and carbon](images/listing/family.jpg)
 
@@ -34,6 +36,8 @@ Every half and the two hammerhead bases come in two looks: white paint and black
 3. Put two halves of the same size on the two side connectors of the base.
 4. Put the halves into one stage. When that stage fires, each half moves straight out and away.
 
+The editor prevents new surface attachments to the jettisonable halves. Put payloads and other hardware on the base or the stage.
+
 Payload space inside the fairing (the widest payload that fits, with a small margin): 2 m fairing 1.62 m, 3 m fairing 2.66 m, 4 m fairing 3.55 m.
 
 ![The hammerhead bases in white and carbon](images/listing/hammerheads.jpg)
@@ -50,9 +54,9 @@ A scaled half is heavier or lighter by the cube of the scale, and its split gets
 
 ## Prisma
 
-The 2 m medium half and the 2 m base were the fairing of [Prisma by Purrline Rocketworks](https://github.com/Maximilian-Nesslauer/KSA-PurrlinePrisma) 1.0.0. They keep their part Ids, so vehicles that you saved with Prisma load with their fairing. Prisma 1.1.0 and later contain the same 2 m fairing, so you can install Prisma and this mod together, in any mod order, and the game loads the fairing one time.
+The 2 m medium half and the 2 m base were the fairing of [Prisma by Purrline Rocketworks](https://github.com/Maximilian-Nesslauer/KSA-PurrlinePrisma) 1.0.0. They keep their part IDs, connectors and joints. Use Prisma 1.2.0 with Fairings 1.0.1 to get the updated attachment rules in either load order. Both releases contain the same 2 m fairing, and the game loads it once.
 
-**Update Prisma to 1.1.0 or later before you enable this mod.** Prisma 1.0.0 contains the same fairing parts in an older form, and with both enabled the fairing does not load. Borea does not let Prisma 1.0.0 and this mod into one instance.
+**Update Prisma 1.0.0 before you enable Fairings.** Prisma 1.0.0 contains the same fairing parts in an older form, and with both enabled the fairing does not load. Borea does not let Prisma 1.0.0 and this mod into one instance.
 
 ## Install
 
