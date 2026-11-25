@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+- Mark the mod as compatible with KSA 2026.11.25.5949. No functional changes.
+
 ## 1.0.1
 
 - Block new surface attachments on jettisonable fairing halves. Preserve part IDs, connector order and fairing joints.

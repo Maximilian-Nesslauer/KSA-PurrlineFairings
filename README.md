@@ -4,7 +4,7 @@ Payload fairings for [Kitten Space Agency](https://ahwoo.com/app/100000/kitten-s
 
 ## Compatibility
 
-Validated against KSA build version **2026.11.16.5901**.
+Validated against KSA build version **2026.11.25.5949**.
 
 ![The fairing family in orbit: 2 m and 3 m fairings, hammerheads, white and carbon](images/listing/family.jpg)
 
