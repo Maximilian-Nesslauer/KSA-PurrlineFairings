@@ -1,5 +1,5 @@
 name = "Fairings by Purrline Rocketworks"
-version = "1.0.1"
+version = "1.0.2"
 description = "Payload fairings by the fictional Purrline Rocketworks: halves of 2 m and 3 m in three lengths, white or black carbon, with bases for 2 m and 3 m stacks and hammerhead bases from 2 m to 3 m and from 3 m to 4 m."
 assets = [
     "PurrlineFairing2BAssets.xml",
